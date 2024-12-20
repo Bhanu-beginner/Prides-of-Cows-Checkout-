@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Pride of Cows - Checkout</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Contents of the different products  -->
+      <div class="list-items">
+        <h1>Pride Of Cows</h1>
+        <h3>Premium Products - Checkout</h3>  
+        <div class="product">
+          <img src="./images/milk bottles.jpg" alt="Milk Bottles image" />
+          <h6>Milk Bottles</h6>
+          <p>$2.80</p>
+          <p class="pointer" title="adding item">x1</p>
+          <p class="pointer" title="subtracting item">x</p>
+        </div>
+        <div class="product">
+          <img src="./images/yogurt.jpg" alt="Curd/Yogurt image" />
+          <h6>Curd</h6>
+          <p>$3</p>
+          <p class="pointer" title="adding item">x1</p>
+          <p class="pointer" title="subtracting item">x</p>
+        </div>
+        <div class="product">
+          <img
+            src="./images/butter.jpg"
+            alt="Butter/Sweet Buttter Cream image"
+          />
+          <h6>Butter</h6>
+          <p>$4</p>
+          <p class="pointer" title="adding item">x1</p>
+          <p class="pointer" title="subtracting item">x</p>
+        </div>
+        <div class="product">
+          <img src="./images/panner.png" alt="Paneer image" />
+          <h6>Paneer</h6>
+          <p>$5</p>
+          <p class="pointer" title="adding item">x1</p>
+          <p class="pointer" title="subtracting item">x</p>
+        </div>
+        <hr />
+        <div class="subscription">
+          <h6>Subscription Packages : </h6>
+          <label><input type="radio" name="subscription" value="$10(Weekly)"><p>$10 (Weekly)</p></label>
+          <label><input type="radio" name="subscription" value="$20(Monthly)"><p>$20 (Monthly)</p></label>
+          <label><input type="radio" name="subscription" value="None"><p>None</p></label>
+        </div>
+        <div class="total">
+            <p>Total:</p>
+        </div>
+      </div>
+
+      <!-- Contents of the user form  -->
+      <form class="form-container" id="form">
+        <h3>Contact Information</h3>
+        <label for="name">First & Last Name</label>
+        <input class="name"
+          type="text"
+          id="name"
+          required
+          placeholder="Enter your First & Last Name"
+        />
+
+        <label for="email">Email address</label>
+        <input class="name"
+          type="email"
+          id="email"
+          required
+          placeholder="Enter your Email"
+        />
+        <label for="country">Country</label>
+        <input type="text" id="country" class="name" required placeholder="Country" />
+
+        <label for="code">Pin Code</label>
+        <input class="name"
+          type="number"
+          id="code"
+          required
+          placeholder="Pin Code"
+          min="1"
+        />
+
+        <label for="house no.">House No.</label>
+        <input type="number" id="house no." class="name" required placeholder="House No." />
+
+        <label for="street">Street Name</label>
+        <input type="text" class="name" id="street" required placeholder="Street Name" />
+
+        <label for="address">Delivery Address</label>
+        <textarea class="name"
+          id="address"
+          rows="5"
+          placeholder="Your address"
+        ></textarea>
+        <button type="submit" id="checkoutbtn">Checkout</button>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
+
